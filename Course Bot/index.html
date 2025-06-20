@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CourseBot - AI Teaching Assistant for Online Course Forums</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Open+Sans:wght@400;600&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <i class="fas fa-robot"></i> CourseBot
+            </div>
+            <ul class="nav-links">
+                <li><a href="#about" class="scroll-link">About</a></li>
+                <li><a href="#features" class="scroll-link">Features</a></li>
+                <li><a href="#how-it-works" class="scroll-link">How It Works</a></li>
+                <li><a href="#examples" class="scroll-link">Examples</a></li>
+                <li><a href="#demo" class="scroll-link">Try Demo</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container">
+            <h1>CourseBot: Your 24/7 AI Teaching Assistant</h1>
+            <p class="subtitle">Automatically answer student questions, link to syllabus content, and reduce repeated
+                questions in Piazza, Canvas, and Blackboard discussions.</p>
+            <div class="cta-buttons">
+                <a href="#demo" class="btn btn-primary scroll-link">Try Demo</a>
+                <a href="#how-it-works" class="btn btn-secondary scroll-link">Learn How It Works</a>
+            </div>
+        </div>
+    </section>
+
+<!-- About Section -->
+<section class="about-section" id="about">
+    <div class="container">
+        <h2>About CourseBot</h2>
+        <div class="about-content">
+            <div>
+                <p>CourseBot is an AI teaching assistant that helps instructors provide personalized support at scale.
+                    By integrating with your existing learning management system, CourseBot can:</p>
+                <ul class="about-list">
+                    <li><i class="fas fa-check-circle"></i> Answer common student questions using course materials</li>
+                    <li><i class="fas fa-check-circle"></i> Provide detailed explanations with source references</li>
+                    <li><i class="fas fa-check-circle"></i> Help debug code and explain programming concepts</li>
+                    <li><i class="fas fa-check-circle"></i> Escalate complex questions to human instructors</li>
+                    <li><i class="fas fa-check-circle"></i> Learn from past interactions to improve responses</li>
+                </ul>
+                <p>CourseBot helps instructors save time while ensuring students get prompt, accurate assistance
+                    whenever they need it.</p>
+            </div>
+            <div class="about-stats">
+                <div class="stat-item">
+                    <span class="stat-number">85%</span>
+                    <span class="stat-label">Reduction in repetitive questions</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">24/7</span>
+                    <span class="stat-label">Support availability</span>
+                </div>
+                <div class="stat-item">
+                    <span class="stat-number">92%</span>
+                    <span class="stat-label">Student satisfaction</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Features Section -->
+<section class="features-section" id="features">
+    <div class="container">
+        <h2>Key Features</h2>
+        <div class="features-grid">
+            <div class="feature-item">
+                <i class="fas fa-book fa-3x"></i>
+                <h3>Course-Specific Knowledge</h3>
+                <p>CourseBot learns from your syllabus, lectures, readings, and other course materials to provide
+                    contextually relevant answers.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-code fa-3x"></i>
+                <h3>Code Assistance</h3>
+                <p>Helps students debug code, explains programming concepts, and provides guidance on assignments
+                    without solving them outright.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-clock fa-3x"></i>
+                <h3>24/7 Availability</h3>
+                <p>Students can get help anytime, reducing frustration during late-night study sessions and
+                    accommodating different time zones.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-users fa-3x"></i>
+                <h3>Human Handoff</h3>
+                <p>Recognizes when a question requires human expertise and seamlessly escalates to course staff with
+                    context.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-brain fa-3x"></i>
+                <h3>Continuous Learning</h3>
+                <p>Improves over time based on interactions and feedback from students and instructors.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-chart-bar fa-3x"></i>
+                <h3>Analytics Dashboard</h3>
+                <p>Track common questions, student engagement, and identify potential gaps in course materials.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- How It Works Section -->
+<section class="how-it-works-section" id="how-it-works">
+    <div class="container">
+        <h2>How CourseBot Works</h2>
+        <div class="steps-container">
+            <div class="step">
+                <div class="step-number">1</div>
+                <i class="fas fa-upload step-icon"></i>
+                <h3>Upload Materials</h3>
+                <p>Connect your course materials, syllabus, and lecture content to CourseBot.</p>
+            </div>
+            <div class="step-arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <i class="fas fa-plug step-icon"></i>
+                <h3>Integrate</h3>
+                <p>Connect CourseBot to your LMS discussion forums or dedicated chat interface.</p>
+            </div>
+            <div class="step-arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <i class="fas fa-robot step-icon"></i>
+                <h3>AI Learning</h3>
+                <p>CourseBot learns from your materials and builds a knowledge base.</p>
+            </div>
+            <div class="step-arrow">
+                <i class="fas fa-arrow-right"></i>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <i class="fas fa-comment-dots step-icon"></i>
+                <h3>Student Support</h3>
+                <p>Students ask questions and receive instant, accurate responses.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <!-- Example Conversations Section -->
+    <section id="examples" class="examples-section">
+        <div class="container">
+            <h2>Example Interactions</h2>
+            <div class="tabs">
+                <button class="tab-btn active" data-tab="example1">Syllabus Questions</button>
+                <button class="tab-btn" data-tab="example2">Project Clarifications</button>
+                <button class="tab-btn" data-tab="example3">Similar Questions</button>
+            </div>
+
+            <div class="tab-content">
+                <div id="example1" class="chat-preview active">
+                    <div class="chat-message student">
+                        <span class="message-sender">Student:</span>
+                        <p>When is Project 2 due? And can I submit it late?</p>
+                    </div>
+                    <div class="chat-message coursebot">
+                        <span class="message-sender">CourseBot:</span>
+                        <p>Project 2 is due on <strong>October 15th at 11:59 PM</strong>. According to the late policy
+                            in the syllabus, you can submit up to 48 hours late with a 10% penalty per day.</p>
+                        <span class="message-source">Source: Course Syllabus, Section 3.2: Late Policy</span>
+                    </div>
+                </div>
+
+                <div id="example2" class="chat-preview">
+                    <div class="chat-message student">
+                        <span class="message-sender">Student:</span>
+                        <p>For the final project, can we use external libraries or do we need to implement everything
+                            from scratch?</p>
+                    </div>
+                    <div class="chat-message coursebot">
+                        <span class="message-sender">CourseBot:</span>
+                        <p>For the final project, you may use the external libraries listed in the project spec (NumPy,
+                            Pandas, and Matplotlib). Any other libraries require instructor approval via Piazza at least
+                            7 days before the deadline.</p>
+                        <span class="message-source">Source: Final Project Guidelines, Page 2, "External Libraries"</span>
+                    </div>
+                </div>
+
+                <div id="example3" class="chat-preview">
+                    <div class="chat-message student">
+                        <span class="message-sender">Student:</span>
+                        <p>I'm getting a NullPointerException in the LinkedList implementation. How do I fix this?</p>
+                    </div>
+                    <div class="chat-message coursebot">
+                        <span class="message-sender">CourseBot:</span>
+                        <p>This issue was discussed in a previous thread. The most common cause is not checking if the
+                            head is null before accessing it in the remove() method.</p>
+                        <div class="previous-thread">
+                            <h4>Related Thread: "Help with LinkedList implementation"</h4>
+                            <p><strong>TA Response:</strong> "Make sure to add a null check before accessing head.next
+                                in your remove() method. The code should look like:</p>
+                            <code>if (head != null) { // access head.next here }</code>
+                        </div>
+                        <span class="message-source">Related Thread: <a href="#">Piazza Post #42</a></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section id="demo" class="demo-section">
+        <div class="container">
+            <h2>Try CourseBot Demo</h2>
+            <div class="demo-container">
+                <div class="demo-sidebar">
+                    <h3>Ask about:</h3>
+                    <ul class="demo-suggestions">
+                        <li><button class="suggestion-btn">When is the midterm?</button></li>
+                        <li><button class="suggestion-btn">What's the late policy?</button></li>
+                        <li><button class="suggestion-btn">How are teams assigned?</button></li>
+                        <li><button class="suggestion-btn">Office hour locations?</button></li>
+                    </ul>
+                </div>
+                <div class="demo-chat">
+                    <div class="chat-messages" id="chat-container">
+                        <div class="chat-message coursebot">
+                            <span class="message-sender">CourseBot:</span>
+                            <p>Hello! I'm CourseBot, your AI teaching assistant. What question do you have about CS251:
+                                Data Structures?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input">
+                        <input type="text" id="user-input" placeholder="Type your course question here...">
+                        <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Integration Section -->
+    <section class="integration-section" id="integration">
+        <div class="container">
+            <h2>Seamless LMS Integration</h2>
+            <p>CourseBot works with all major learning management systems and educational platforms.</p>
+            <div class="platform-logos">
+                <div class="platform">
+                    <img src="/api/placeholder/120/60" alt="Canvas LMS logo">
+                    <span>Canvas</span>
+                </div>
+                <div class="platform">
+                    <img src="/api/placeholder/120/60" alt="Blackboard logo">
+                    <span>Blackboard</span>
+                </div>
+                <div class="platform">
+                    <img src="/api/placeholder/120/60" alt="Moodle logo">
+                    <span>Moodle</span>
+                </div>
+                <div class="platform">
+                    <img src="/api/placeholder/120/60" alt="D2L logo">
+                    <span>D2L Brightspace</span>
+                </div>
+                <div class="platform">
+                    <img src="/api/placeholder/120/60" alt="Google Classroom logo">
+                    <span>Google Classroom</span>
+                </div>
+            </div>
+            <div class="integration-steps">
+                <div class="integration-step">
+                    <div class="step-dot">1</div>
+                    <h3>Request API Key</h3>
+                    <p>Sign up and receive your unique CourseBot API credentials</p>
+                </div>
+                <div class="integration-step">
+                    <div class="step-dot">2</div>
+                    <h3>Install Plugin</h3>
+                    <p>Add our LMS plugin to your course platform</p>
+                </div>
+                <div class="integration-step">
+                    <div class="step-dot">3</div>
+                    <h3>Upload Materials</h3>
+                    <p>Connect your course content and customize settings</p>
+                </div>
+                <div class="integration-step">
+                    <div class="step-dot">4</div>
+                    <h3>Go Live</h3>
+                    <p>Activate CourseBot for your students to use</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <h2>What Educators Are Saying</h2>
+            <div class="testimonials-container">
+                <div class="testimonial">
+                    <p class="quote">CourseBot has been a game-changer for my Introduction to Computer Science course. It
+                        handles the repetitive questions, letting me focus on deeper learning challenges with my students.
+                    </p>
+                    <div class="author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Professor avatar">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Dr. Sarah Johnson</span>
+                            <span class="author-title">Computer Science Professor, Stanford University</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">My online calculus course has 300+ students across multiple time zones. CourseBot
+                        provides instant help at all hours, and the quality of responses has impressed both me and my
+                        teaching assistants.</p>
+                    <div class="author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Professor avatar">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Prof. Michael Chen</span>
+                            <span class="author-title">Mathematics Department, MIT</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <p class="quote">Student engagement has increased significantly since implementing CourseBot. The 24/7
+                        support means students don't get stuck waiting for answers, and they're making more progress on
+                        assignments.</p>
+                    <div class="author">
+                        <div class="author-image">
+                            <img src="/api/placeholder/50/50" alt="Professor avatar">
+                        </div>
+                        <div class="author-info">
+                            <span class="author-name">Dr. Emily Rodriguez</span>
+                            <span class="author-title">Online Learning Director, University of Texas</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="cta" class="cta-section">
+        <div class="container">
+            <h2>Ready to Transform Your Course Communication?</h2>
+            <p>Join the hundreds of educators saving time and improving student satisfaction with CourseBot.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary">Request Demo</a>
+                <a href="#" class="btn btn-secondary">Contact Sales</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-section">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-col">
+                    <h3>CourseBot</h3>
+                    <p>AI-powered teaching assistant for online course discussion forums.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#how-it-works">How It Works</a></li>
+                        <li><a href="#cta">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Resources</h4>
+                    <ul>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">API Reference</a></li>
+                        <li><a href="#">Pricing</a></li>
+                        <li><a href="#">Support</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 CourseBot. All rights reserved. Built with modern education needs in mind.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Custom Scripts -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>
